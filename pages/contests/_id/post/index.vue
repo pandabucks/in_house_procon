@@ -14,20 +14,37 @@
         </v-breadcrumbs>
       </div>
       <div>
-        <div>
-          <div>
-              <v-card
-              max-width="1344"
-              class="mx-auto"
+        <v-container
+          class="pa-2"
+          fluid
+          >
+          <v-row
+            class="mb-4">
+            <v-card
+            width="1344"
+            >
+            <v-card-title>問題文</v-card-title>
+            <v-card-text>高橋君は 3 桁のパスワードを設定しようとしています。<br />使える文字が 1以上 N以下の数字のみであるとき、設定できるパスワードが全部で何種類であるかを答えてください。</v-card-text>
+            </v-card>
+          </v-row>
+          <v-row>
+            <v-card
+              width="1344"
+              class="pb-5"
               >
-              <v-card-title>問題文</v-card-title>
-              <v-card-text>高橋君は 3 桁のパスワードを設定しようとしています。<br />使える文字が 1以上 N以下の数字のみであるとき、設定できるパスワードが全部で何種類であるかを答えてください。</v-card-text>
-              </v-card>
-          </div>
-        </div>
-      </div>
-      <div>
-        ここにコードエディタ入る
+              <v-card-title>投稿</v-card-title>
+              <v-card-text>
+                <textarea>sample code submission</textarea>
+              </v-card-text>
+              <v-btn
+                color="success"
+                class="mr-4"
+              >
+                Submit
+              </v-btn>
+            </v-card>
+          </v-row>
+        </v-container>
       </div>
     </v-flex>
   </v-layout>

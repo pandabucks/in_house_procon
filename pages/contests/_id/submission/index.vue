@@ -23,7 +23,7 @@
             >
                 <template v-slot:top>
                 <v-toolbar flat color="white">
-                    <v-toolbar-title>ランキング</v-toolbar-title>
+                    <v-toolbar-title>提出一覧</v-toolbar-title>
                     <div class="flex-grow-1"></div>
                 </v-toolbar>
                 </template>
