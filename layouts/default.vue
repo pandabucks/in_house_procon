@@ -1,5 +1,5 @@
 <template>
-  <v-app dark>
+  <v-app light>
     <v-navigation-drawer
       v-model="drawer"
       :mini-variant="miniVariant"
@@ -103,14 +103,19 @@ export default {
         },
         {
           icon: 'mdi-chart-bubble',
-          title: 'Inspire',
-          to: '/inspire'
+          title: 'ログイン',
+          to: '/login'
+        },
+        {
+          icon: 'mdi-chart-bubble',
+          title: 'コンテスト',
+          to: '/contests'
         }
       ],
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: 'Vuetify.js'
+      title: '社内プログラミング コンテスト'
     }
   }
 }
