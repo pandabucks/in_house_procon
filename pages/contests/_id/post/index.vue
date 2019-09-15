@@ -27,20 +27,14 @@
         </div>
       </div>
       <div>
-        <template>
-          <prism-editor :code="code" language="js"></prism-editor>
-        </template>
+        ここにコードエディタ入る
       </div>
     </v-flex>
   </v-layout>
 </template>
 
 <script>
-  import PrismEditor from 'vue-prism-editor'
   export default {
-    components: {
-      PrismEditor
-    },
     data: () => ({
       items: [
         {
@@ -57,6 +51,11 @@
           text: 'ランキング',
           disabled: true,
           href: '/contests/4/ranking',
+        },
+        {
+          text: '提出',
+          disabled: true,
+          href: '/contests/4/submission',
         },
       ],
     }),

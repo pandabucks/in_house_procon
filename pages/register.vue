@@ -3,7 +3,7 @@
     max-width="344"
     class="mx-auto"
   >
-    <v-card-title>ログイン</v-card-title>
+    <v-card-title>新規登録</v-card-title>
     <v-card-text>
       <v-form
         ref="form"

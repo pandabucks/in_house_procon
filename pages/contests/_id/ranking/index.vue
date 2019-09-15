@@ -54,6 +54,11 @@
           disabled: true,
           href: '/contests/4/ranking',
         },
+        {
+          text: '提出',
+          disabled: true,
+          href: '/contests/4/submission',
+        },
       ],
     }),
   }

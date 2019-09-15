@@ -1,6 +1,5 @@
 <template>
-  <v-layout>
-    <v-flex class="text-center">
+    <div>
         <div>
             <v-breadcrumbs :items="items">
                 <template v-slot:item="props">
@@ -14,18 +13,26 @@
             </v-breadcrumbs>
         </div>
         <div>
-          <div>
-            <v-card
-              max-width="1344"
-              class="mx-auto"
+            <v-data-table
+                :headers="headers"
+                :items="desserts"
+                :expanded.sync="expanded"
+                item-key="name"
+                show-expand
+                class="elevation-1"
             >
-            <v-card-title>問題文</v-card-title>
-            <v-card-text>高橋君は 3 桁のパスワードを設定しようとしています。<br />使える文字が 1以上 N以下の数字のみであるとき、設定できるパスワードが全部で何種類であるかを答えてください。</v-card-text>
-            </v-card>
-          </div>
+                <template v-slot:top>
+                <v-toolbar flat color="white">
+                    <v-toolbar-title>ランキング</v-toolbar-title>
+                    <div class="flex-grow-1"></div>
+                </v-toolbar>
+                </template>
+                <template v-slot:expanded-item="{ headers }">
+                <td :colspan="headers.length">Peek-a-boo!</td>
+                </template>
+            </v-data-table>
         </div>
-    </v-flex>
-  </v-layout>
+    </div>
 </template>
 
 <script>
@@ -51,7 +58,7 @@
           text: '提出',
           disabled: true,
           href: '/contests/4/submission',
-        },
+        }
       ],
     }),
   }

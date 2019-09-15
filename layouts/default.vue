@@ -98,8 +98,13 @@ export default {
       items: [
         {
           icon: 'mdi-apps',
-          title: 'Welcome',
+          title: 'トップページ',
           to: '/'
+        },
+        {
+          icon: 'mdi-chart-bubble',
+          title: '新規登録',
+          to: '/register'
         },
         {
           icon: 'mdi-chart-bubble',
@@ -110,12 +115,12 @@ export default {
           icon: 'mdi-chart-bubble',
           title: 'コンテスト',
           to: '/contests'
-        }
+        },
       ],
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: '社内プログラミング コンテスト'
+      title: 'プログラミングコンテスト'
     }
   }
 }
