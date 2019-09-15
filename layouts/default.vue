@@ -71,6 +71,11 @@ export default {
           title: 'コンテスト',
           to: '/contests'
         },
+        {
+          icon: 'mdi-chart-bubble',
+          title: '設定',
+          to: '/setting'
+        },
       ],
       title: 'プログラミングコンテスト'
     }
